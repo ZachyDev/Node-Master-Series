@@ -7,6 +7,9 @@ const myJoke = joke.getRandomJoke();
 
 const casual = require("casual");
 
-let city = casual.city;
+const people = [];
 
-console.log(city);
+for(let i = 0; i < 20; i++) {
+	people.push(casual.full_name);
+}
+console.log(people);
